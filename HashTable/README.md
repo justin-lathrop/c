@@ -6,7 +6,7 @@ A pure C way to make a hash table to hold generic data and use a generic key.
 
 
 The example use of the hashtable is simple but is to show the resizing capability 
-within the hashtable.  Every hashtable is O(n) on lookups, but this is with optimal 
+within the hashtable.  Every hashtable is O(1) on lookups, but this is with optimal 
 hardware and minimal to no collisions.  So we have a hashtable that can start at a 
 small size and when added elements to it, it can expand to hold them with less 
 collisions.
