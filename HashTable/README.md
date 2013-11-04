@@ -1,4 +1,5 @@
-<h1>HashTable</h1>
+<h2>HashTable</h2>
+<hr />
 
 
 A pure C way to make a hash table to hold generic data and use a generic key.
