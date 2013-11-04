@@ -1,4 +1,4 @@
-<h2>HashTable</h2>
+<h3>HashTable</h3>
 <hr />
 
 
