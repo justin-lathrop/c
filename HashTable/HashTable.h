@@ -39,7 +39,7 @@ typedef struct HashTable{
  * or structure etc can be used as the key in the 
  * key value pairing.
  */
-HashTable * hashtable_initialize(size_t, size_t, int, hash_function, compare_equal);
+HashTable * hashtable_initialize(size_t, size_t, size_t, hash_function, compare_equal);
 
 /*
  * Finds the value in the table in O(n) speed given 
