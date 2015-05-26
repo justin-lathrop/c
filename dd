@@ -1,0 +1,193 @@
+[33mcommit 3ee17cd2bd59187c6eb9e1f123c1c7bda2c19437[m
+Author: jelathro <jelathrop@gmail.com>
+Date:   Sun Dec 15 19:54:41 2013 -0500
+
+    Removed some certificates, users can create their own.
+
+[33mcommit 20d2234c108547f93e798637b3097677c3090834[m
+Author: jelathro <jelathrop@gmail.com>
+Date:   Sun Dec 15 15:01:20 2013 -0500
+
+    Initial working commit of tun/tap vpn.
+    
+    Certificates are random and just used for testing.
+
+[33mcommit 8e3335737310b07f8b6c8c0af1d0e34e6e9f537a[m
+Author: jelathro <jelathrop@gmail.com>
+Date:   Wed Nov 6 21:13:22 2013 -0500
+
+    Makefile
+
+[33mcommit c422b430a9ad2859dd1840c48834939bc764caee[m
+Author: jelathro <jelathrop@gmail.com>
+Date:   Wed Nov 6 21:12:57 2013 -0500
+
+    Circular Buffer initial commit
+
+[33mcommit 36adac9d91bb5726f4562c6396fc0c7fae650fde[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Sun Nov 3 20:12:51 2013 -0500
+
+    Update README.md
+
+[33mcommit 573dbed075fc4655d5f510c07e9dac32e5992dad[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Sun Nov 3 19:17:21 2013 -0500
+
+    Create Makefile
+
+[33mcommit 7ff8c89efb403f32ac885a3546b8dff7ec0f9b88[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Sun Nov 3 19:15:36 2013 -0500
+
+    Update HashTable.h
+
+[33mcommit 43052a1a5bc042d71c2b6c02018f47ce7ae4655e[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Sun Nov 3 19:10:12 2013 -0500
+
+    Update README.md
+
+[33mcommit c4759526e4cb27b002d30e0ff5e087665e743c36[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Sun Nov 3 19:09:53 2013 -0500
+
+    Update README.md
+
+[33mcommit 51ba2837ef0288bfa0cd07b66fc4b7b689b48e89[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Sun Nov 3 19:08:57 2013 -0500
+
+    Update README.md
+
+[33mcommit 8ede4c4e1c63a9564036c3e100e3b4c1cca503e3[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Sun Nov 3 19:08:42 2013 -0500
+
+    Create makefile
+
+[33mcommit 9529434d98e6383092e8ed18be902aebaa3d3804[m
+Author: jelathro <jelathrop@gmail.com>
+Date:   Sun Nov 3 19:07:26 2013 -0500
+
+    Initial commit.
+
+[33mcommit f54d4c995953f8942caf9770dd98decbc4a737d6[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Sun Oct 27 19:19:04 2013 -0400
+
+    Create README.md
+
+[33mcommit 66428df98c4715a48aaa478359bc6e6b377e90d5[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Sun Oct 27 19:18:40 2013 -0400
+
+    Create README.md
+
+[33mcommit 193420066984349a899c5f37d0c9ed483c9e15cd[m
+Author: jelathro <jelathrop@gmail.com>
+Date:   Sun Oct 27 19:00:53 2013 -0400
+
+    Adding Queue implementation, v1.0.
+
+[33mcommit 29ba360a4cbbc676cb7a58e20ddf3eb2b5d531a1[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Sat Oct 26 21:40:26 2013 -0400
+
+    Adding Makefile
+
+[33mcommit a99ecd727f7e84a623d668681ea812f681c63eeb[m
+Author: jelathro <jelathrop@gmail.com>
+Date:   Sat Oct 26 20:07:13 2013 -0400
+
+    Linked List with generic items contained.
+
+[33mcommit e6d8bc3c17944f18aca20cd2783b7d60eee897cb[m
+Author: jelathro <jelathrop@gmail.com>
+Date:   Thu Oct 24 19:50:51 2013 -0400
+
+    Removed all uneeded folders/files.
+
+[33mcommit 7ad021ea3a5d6001c21b85867c33bd169039f57f[m
+Author: jelathro <jelathrop@gmail.com>
+Date:   Thu Oct 24 19:48:24 2013 -0400
+
+    Refactored directory layout, removed unneeded files/folders.
+
+[33mcommit 6c5008f72a45c7c53d971e47a271c94aa691c4d5[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Thu Oct 24 19:45:45 2013 -0400
+
+    Delete main.c
+
+[33mcommit 8e8a5630b397a1ba9daa3f6e0004974e5935e405[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Thu Oct 24 19:45:04 2013 -0400
+
+    Delete UserInterfaceState.xcuserstate
+
+[33mcommit 26602eb9f240897c644791dfd5474c01b21a3b49[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Thu Oct 24 19:44:57 2013 -0400
+
+    Delete contents.xcworkspacedata
+
+[33mcommit 588d0670553aac3ed1d5088df129150fbfff108c[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Thu Oct 24 19:44:51 2013 -0400
+
+    Delete helloWorld.xcscheme
+
+[33mcommit 8c55be72043d354470af7b7db05fedb2e1fe620f[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Thu Oct 24 19:44:46 2013 -0400
+
+    Delete xcschememanagement.plist
+
+[33mcommit e44718bd804cf4986f53758f21af7efd4757e89d[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Thu Oct 24 19:44:36 2013 -0400
+
+    Delete project.pbxproj
+
+[33mcommit b15f50e96bbe2f1d8a41c610ba61b815b7c216c0[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Thu Oct 24 19:43:52 2013 -0400
+
+    Delete helloWorld.1
+
+[33mcommit 70b16b1ed66db0419caf7989260216c33af16489[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Tue Oct 8 18:45:58 2013 -0400
+
+    Update README.md
+
+[33mcommit c4a474e715983a847247a55aaf5395f9a1251903[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Tue Oct 8 18:45:40 2013 -0400
+
+    Update README.md
+
+[33mcommit 10fc661e9851b86f775fd73c6d37559c45757bca[m
+Author: Justin Lathrop <jelathrop@gmail.com>
+Date:   Tue Feb 19 23:49:53 2013 -0500
+
+    input output program creation
+
+[33mcommit 337c182b4a73583124ad8f65f57334d02f83c6b2[m
+Author: Justin Lathrop <jelathrop@gmail.com>
+Date:   Tue Feb 19 23:05:19 2013 -0500
+
+    Created Pointers example program
+
+[33mcommit 83657fe605d2003673d694224a9d53ab6128537b[m
+Author: Justin Lathrop <jelathrop@gmail.com>
+Date:   Mon Feb 18 14:25:42 2013 -0500
+
+    Hello World Project
+
+[33mcommit 8d42d7a418869e86f992dde46d67ee089bec2b2f[m
+Author: Justin <jelathrop@gmail.com>
+Date:   Mon Feb 18 11:14:56 2013 -0800
+
+    Initial commit
