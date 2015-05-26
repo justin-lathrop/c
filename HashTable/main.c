@@ -52,7 +52,7 @@ int main(int argc, char ** argv){
 	printf("ht[\"7\"]: %s\n", (const char *)hashtable_get(ht, (void *)"7"));
 	printf("ht[\"8\"]: %s\n", (const char *)hashtable_get(ht, (void *)"8"));
 
-	hashtable_destroy(ht);
+	hashtable_destroy(ht);  // why this changes are made to this i want to know .. help me out
 
 	return(0);
 }
