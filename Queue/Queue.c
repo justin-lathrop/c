@@ -74,19 +74,15 @@ int queue_pop(Queue_t * q, queue_callback_func_pop cb){
 }
 
 void * queue_front(Queue_t * q){
-	QueueItem_t * next = q->head;
+	QueueItem_t * tmp = q->head;
 
 	if(q->size == 0) return( (void *)0);
 
-	if(q->size == 1){
-		return(q->head->data);
+	while(tmp->next){
+		tmp = tmp->next;
 	}
 
-	while(next->next){
-		next = next->next;
-	}
-
-	return( next->data );
+	return( tmp->data );
 }
 
 void queue_for_each(Queue_t * q, queue_callback_func cb){
