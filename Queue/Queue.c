@@ -87,13 +87,16 @@ void * queue_front(Queue_t * q){
 
 void queue_for_each(Queue_t * q, queue_callback_func cb){
 	QueueItem_t * next = q->head;
-	int idx = 0;
-
+	int idx = 0;/* if you want to change the index number to ascending in output you can substitute with
+	int i = 0;
+	int idx = q->size -1;
+	*/
 	if(q->size == 0) return;
 
 	while(next){
 		cb(idx, next->data);
-		idx++;
+		idx++;//if you want ascending index just replaced this with 
+		//idx--;
 		next = next->next;
 	}
 }
