@@ -17,6 +17,11 @@
 HashTable * hashtable_initialize(size_t size, size_t mc, size_t gf, hash_function fn, compare_equal efn){
 	size_t i;
 	HashTable * ht = (HashTable *) malloc( sizeof(HashTable) );
+        
+        if (ht == NULL) {
+            printf("\nERROR: Cannot create hash table. Terminating...");
+            exit(EXIT_FAILURE); // well... any other implementation could be added, instead of this.
+        }
 
 	ht->hf = fn;
 	ht->eq = efn;
@@ -25,6 +30,11 @@ HashTable * hashtable_initialize(size_t size, size_t mc, size_t gf, hash_functio
 	ht->growthFactor = gf;
 
 	ht->table = (Item **) malloc(size * sizeof( Item * ));
+        
+        if (ht->table == NULL) {
+            printf("\nERROR: Cannot create hash table. Terminating...");
+            exit(EXIT_FAILURE); // well... any other implementation could be added, instead of this.
+        }
 
 	for(i=0; i<size; i++){
 		ht->table[i] = 0;
@@ -49,8 +59,19 @@ void * hashtable_get(HashTable * ht, void * key){
 }
 
 int hashtable_destroy(HashTable * ht){
+    
+        // Avoiding runtime errors. Return a successful destroy when the 
+        // hashtable has not been initialized using the 'hashtable_initialize'
+        // function.
+    
+        if (ht == NULL)                 
+          return 1;
+        
+        // From here we know the hashtable has been properly initialized so, 
+        // we continue computations.
+        
 	size_t i;
-
+        
 	for(i=0; i<ht->size; i++){
 		free(ht->table[i]);
 	}
@@ -79,8 +100,8 @@ int hashtable_resize(HashTable * ht, size_t size){
 	}
 
 	free(ht->table);
-	ht->size = newht->size;
-	ht->table = newht->table;
+	newht->size = ht->size;
+	newht->table = ht->table;
 
 	return(1);
 }
@@ -102,6 +123,13 @@ int hashtable_add(HashTable * ht, void * key, void * value){
 	}
 
 	next = (Item *)malloc( sizeof(Item) );
+        
+        // Making sure that memory was properly allocated for 'next'.
+        if (next == NULL) {
+            printf("\nERROR: Insufficient memory. Terminating....");
+            exit(EXIT_FAILURE); // some other implementation could be used here.
+        }
+        
 	next->key = key;
 	next->value = value;
 	next->next = ht->table[ hash % ht->size ];

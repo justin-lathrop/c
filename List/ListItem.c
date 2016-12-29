@@ -12,6 +12,13 @@
  */
 ListItem_t * list_item_initialize(){
 	ListItem_t * li = (ListItem_t *) malloc( sizeof(ListItem_t) );
+        
+        // Making sure there was enough memory for a 'ListItem_t' type 'li'.
+        if (li == NULL) {
+            printf("\nERROR: Insufficient memory. Terminating...");
+            exit(EXIT_FAILURE);   
+        }
+        
 	li->next = 0;
 
 	return(li);
