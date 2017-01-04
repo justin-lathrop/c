@@ -20,11 +20,19 @@ int queue_push(Queue_t * q, void * d){
 
 	if(q->size == 0){
 		q->head = (QueueItem_t *) malloc( sizeof(QueueItem_t) );
+                if (q->head == NULL) {
+                    printf("\nERROR: Insufficient memory. Terminating...");
+                    exit(EXIT_FAILURE);
+                }
 		q->head->next = 0;
 		q->head->data = d;
 	}else{
 		tmp = q->head;
 		q->head = (QueueItem_t *) malloc( sizeof(QueueItem_t) );
+                if (q->head == NULL) {
+                    printf("\nERROR: Insufficient memory. Terminating...");
+                    exit(EXIT_FAILURE);
+                }
 		q->head->data = d;
 		q->head->next = tmp;
 	}

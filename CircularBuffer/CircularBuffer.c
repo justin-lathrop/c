@@ -10,8 +10,24 @@
 CircularBuffer * circularbuffer_initialize(size_t size, void * val){
 	size_t i;
 	CircularBuffer * cb = (CircularBuffer *)malloc( sizeof(CircularBuffer) );
+        
+        if (cb == NULL) {
+            
+            // any other implementation may be added here.
+            
+            printf("\nERROR: Insufficient memory. Terminating...");
+            exit(EXIT_FAILURE);
+        }
 
 	cb->buffer = (Item *)calloc(size, sizeof(Item));
+        
+        if (cb->buffer == NULL) {
+            
+            // any other implementation may be added here.
+            
+            printf("\nERROR: Insufficient memory. Terminating...");
+            exit(EXIT_FAILURE);
+        }
 
 	for(i=0; i<size; i++){
 		cb->buffer[i].data = val;
