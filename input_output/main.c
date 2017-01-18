@@ -15,7 +15,7 @@ int main(void){
     int number_entered = 0;
     printf("number_entered = %d\n", number_entered);
     scanf("%d", &number_entered);
-    printf("nmber_entered = %d\n", number_entered);
+    printf("number_entered = %d\n", number_entered);
     
     // Input Output using STDIN and
     // STDOUT
