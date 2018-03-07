@@ -36,7 +36,7 @@ int list_item_remove(ListItem_t * li, list_item_remove_callback_func cb){
  * Add ListItem_t data and returns 
  * if successful or not.
  */
-int list_item_add(ListItem_t * li, void * data){
-	li->data = data;
-	return(1);
+int list_item_add(ListItem_t * li, void *data){
+	li->data = *data;
+	return;
 }
