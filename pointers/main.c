@@ -13,29 +13,30 @@ int main(void){
     int basic_value;
 
     // Give value a literal value
-    basic_value = 'A';
+    basic_value = 'A';//stores the ASCII value of 'A'
     // Assign pointer to address
     // of literal value in value
     basic_pointer = &basic_value;
 
     printf("pointer is at address %p\n", &basic_pointer);
-    printf("value at address of pointer is %c\n\n", *basic_pointer);
+    printf("value at address of pointer is %c\n\n", *basic_pointer);// *basic_pointer = basic_value
 
     // More advanced use of pointers
     // Array's are just fancy pointers
     char array[5] = {'a', 'A', 'b', 'z', 'M'};
-    char *same_array = array;
-    char **fancy_same_array = &same_array;
+    char *same_array = array;// same_array = &array[0]
+    char **fancy_same_array = &same_array;// *fancy_same_array = same_array
 
+    // 'same_array' can be used in place of 'array'
     printf("array[3] = %c, addr = %p\n", array[3], &array[3]);
     printf("same_array[3] = %c, addr = %p\n", same_array[3], &same_array[3]);
-    printf("**fancy_same_array[3] = %c, addr = %p\n", (*fancy_same_array)[3], &(*fancy_same_array)[3]);
+    printf("**fancy_same_array[3] = %c, addr = %p\n", smae_array[3], &same_array[3]);
 
     // char arrays are also just a "string"
     // of characters.
     printf("array string %s, addr = %p\n", array, &array);
     printf("same array string %s, addr = %p\n", same_array, &same_array);
-    printf("fancy array string %s, addr = %p\n\n", (*fancy_same_array), &(*fancy_same_array));
+    printf("fancy array string %s, addr = %p\n\n", same_array, &(same_array));
 
     // Arrays of pointers
     char *ptr_array[2];
@@ -45,7 +46,7 @@ int main(void){
     ptr1 = &char_elements[1];
     ptr2 = char_elements;
 
-    ptr_array[0] = ptr2;
+    ptr_array[0] = ptr2;// ptr_array is a 2 dimensional array
     ptr_array[1] = ptr1;
     
     printf("**ptr_array = %c\n", **ptr_array);
