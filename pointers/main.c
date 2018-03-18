@@ -30,7 +30,7 @@ int main(void){
     // 'same_array' can be used in place of 'array'
     printf("array[3] = %c, addr = %p\n", array[3], &array[3]);
     printf("same_array[3] = %c, addr = %p\n", same_array[3], &same_array[3]);
-    printf("**fancy_same_array[3] = %c, addr = %p\n", smae_array[3], &same_array[3]);
+    printf("**fancy_same_array[3] = %c, addr = %p\n", same_array[3], &same_array[3]);
 
     // char arrays are also just a "string"
     // of characters.
