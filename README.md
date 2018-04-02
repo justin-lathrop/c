@@ -3,9 +3,8 @@
 
 C programming libraries, tutorials, and guides.
 
-These programs are meant to help others get started quicker 
-on their own projects and also help them understand certain 
-coding techniques and ideas.
+These programs are meant to help others start their own projects and understand 
+coding techniques.
 
-Do with them what you want and feel free to send updates or 
-improvements or ideas.
+Use them however would like and feel free to send updates, 
+improvements, or ideas.
