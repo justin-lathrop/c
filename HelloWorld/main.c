@@ -4,7 +4,7 @@
  * @author jelathro
  * @date 2/18/13
  * 
- * @reviewd by Abdou Developer (Abdelhakim R)
+ * @reviewed by Abdou Developer (Abdelhakim R)
  * @https://github.com/test20091
  * @date 09/23/2018
  *
