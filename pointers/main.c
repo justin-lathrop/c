@@ -7,7 +7,7 @@
  * Provide various examples of pointers 
  * and how pointers work.
  */
-int main(void){
+int main(){
     // Basic pointers and Basic addresses
     int *basic_pointer;
     int basic_value;
