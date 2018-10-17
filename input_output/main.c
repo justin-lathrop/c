@@ -9,7 +9,7 @@
  * Show some of the various input output
  * (I/O) methods in C.
  */
-int main(void){
+int main(){
     // Input Output using printf
     // and scanf
     int number_entered = 0;
