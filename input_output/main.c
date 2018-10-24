@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define BUF_SIZE 1024
+#define BUF_SIZE 1024 //means 1024 replace at the place of BUF_SIZE
 
 /*
  * @author jelathro
