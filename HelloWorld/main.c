@@ -6,7 +6,7 @@
  * 
  * Print "Hello, World!" to the console
  */
-int main(void){
+main(){							//we can print helllo world to the console without using int type or void type main
     printf("Hello, World!\n");
-    return 0;
+    
 }
