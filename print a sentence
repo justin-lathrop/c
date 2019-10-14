@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main()
+{char s[50];
+scanf("%[^\n]%*c",&s);
+printf("%s",&s);
+}
