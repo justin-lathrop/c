@@ -13,7 +13,11 @@ int main(void){
     // Input Output using printf
     // and scanf
     int number_entered = 0;
+
+    // Value in number_entered (here 0) takes place of %d 
+    // while outputting to screen 
     printf("number_entered = %d\n", number_entered);
+    // User entered integer gets stored in number_entered
     scanf("%d", &number_entered);
     printf("number_entered = %d\n", number_entered);
     
