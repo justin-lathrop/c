@@ -1,3 +1,4 @@
+// Include header file stdio which stands for STanDardInputOutput
 #include <stdio.h>
 
 /*
@@ -6,7 +7,9 @@
  * 
  * Print "Hello, World!" to the console
  */
+// Here return type of main is int
 int main(void){
+	// \n adds new line
     printf("Hello, World!\n");
     return 0;
 }
