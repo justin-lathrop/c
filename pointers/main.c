@@ -56,7 +56,18 @@ int main(void){
     printf("addr at *ptr_array[0] = %p\n", &(**ptr_array));
     printf("addr at *ptr_array[0] = %p\n", &(**ptr_array));
     printf("addr at *ptr_array[1] = %p\n", &(*ptr_array[1]));
-
+    
+    int number = 0;             // 0000 0000 0000 0000 = 0
+    printf("%d\n",number);
+    *((char*)&number+1) = 1;    // 0000 0000 0001 0000 = 256
+    printf("%d\n",number);
+    *((char*)&number+1) = 2;    // 0000 0000 0010 0000 = 512
+    printf("%d\n",number);
+    *((char*)&number+1) = 4;    // 0000 0000 0100 0000 = 1024
+    printf("%d\n",number);
+    *((char*)&number+1) = 8;    // 0000 0000 1000 0000 = 2048
+    printf("%d\n",number);
+    
     return 0;
 }
 
