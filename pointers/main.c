@@ -40,7 +40,7 @@ int main(void){
     // Arrays of pointers
     char *ptr_array[2];
     char *ptr1 = NULL, *ptr2 = NULL;
-    char char_elements[2] = {'H', 'i'};
+    char char_elements[2] = {'H', 'I'};
 
     ptr1 = &char_elements[1];
     ptr2 = char_elements;
