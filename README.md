@@ -1,7 +1,7 @@
 <center><h3>C</h3></center>
 <hr />
 
-C programming libraries, tutorials, and guides.
+<strong> C programming libraries, tutorials, and guides.</strong>
 
 These programs are meant to help others get started quicker 
 on their own projects and also help them understand certain 
