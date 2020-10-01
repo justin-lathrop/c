@@ -9,9 +9,12 @@
  * Show some of the various input output
  * (I/O) methods in C.
  */
+
 int main(void){
+    
     // Input Output using printf
     // and scanf
+    
     int number_entered = 0;
     printf("number_entered = %d\n", number_entered);
     scanf("%d", &number_entered);
@@ -19,6 +22,7 @@ int main(void){
     
     // Input Output using STDIN and
     // STDOUT
+    
     char buffer[BUF_SIZE];
     printf("Entering STDIN while loop\n");
     while(fgets(buffer, BUF_SIZE, stdin)){
