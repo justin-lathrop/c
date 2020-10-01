@@ -3,7 +3,7 @@
 
 C programming libraries, tutorials, and guides.
 
-These programs are meant to help others get started quicker 
+These programs are meant to help others get started quickly, 
 on their own projects and also help them understand certain 
 coding techniques and ideas.
 
