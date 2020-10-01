@@ -1,10 +1,10 @@
-<center><h3>C</h3></center>
+<center><h3>C Programming</h3></center>
 <hr />
 
-C programming libraries, tutorials, and guides.
+C programming Libraries, Tutorials, and Guides.
 
 These programs are meant to help others get started quicker 
-on their own projects and also help them understand certain 
+with their own projects and also help them understand certain 
 coding techniques and ideas.
 
 Do with them what you want and feel free to send updates or 
