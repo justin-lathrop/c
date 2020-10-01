@@ -1,12 +1,10 @@
 #include <stdio.h>
 
-/*
- * @author jelathro
- * @date 2/18/13
- * 
- * Print "Hello, World!" to the console
+/* 
+ * Here print "Hello, World!" to the console output
  */
 int main(void){
-    printf("Hello, World!\n");
+    printf(" Hello, World!!\n ");
+    printf(" Greetings everyone!!\n ");
     return 0;
 }
