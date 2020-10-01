@@ -6,7 +6,10 @@
  * 
  * Print "Hello, World!" to the console
  */
-int main(void){
-    printf("Hello, World!\n");
+   
+    int main()
+    {
+    char string[] = "Hello World";
+    printf("%s\n", string);
     return 0;
-}
+    }
