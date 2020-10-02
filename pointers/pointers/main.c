@@ -17,15 +17,15 @@ int main(void){
     // Assign pointer to address
     // of literal value in value
     basic_pointer = &basic_value;
-
-    printf("pointer is at address %p\n", &basic_pointer);
+    //Now pointer variable 'basic_pointer' holds address of variable 'basic_value'
+    printf("pointer is at address %p\n", &basic_pointer);      
     printf("value at address of pointer is %c\n\n", *basic_pointer);
 
     // More advanced use of pointers
     // Array's are just fancy pointers
-    char array[5] = {'a', 'A', 'b', 'z', 'M'};
+    char array[5] = {'a', 'A', 'b', 'z', 'M'};  //'array' in itself is a pointer variable here and points to 1st element 'a' of the array
     char *same_array = array;
-    char **fancy_same_array = &same_array;
+    char **fancy_same_array = &same_array; // a pointer variable holding the address of another pointer variable 
 
     printf("array[3] = %c, addr = %p\n", array[3], &array[3]);
     printf("same_array[3] = %c, addr = %p\n", same_array[3], &same_array[3]);
