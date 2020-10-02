@@ -9,3 +9,4 @@ coding techniques and ideas.
 
 Do with them what you want and feel free to send updates or 
 improvements or ideas.
+Show skills of coding and give ideas to write program in more reduced way and effective way.
