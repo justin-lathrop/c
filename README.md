@@ -1,4 +1,4 @@
 <center><h3>C</h3></center>
 <hr />
 
-C programming libraries, tutorials, and guides.
+This repo contains all the necessary Data Structure, libaries and function of C language.
