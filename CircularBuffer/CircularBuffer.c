@@ -3,7 +3,7 @@
  * @date: 11/6/13
  */
 
-#include <stdlib.h>
+#include <stdio.h>
 
 #include "CircularBuffer.h"
 
