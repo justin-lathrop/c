@@ -1,5 +1,5 @@
 /*
- * @author: jelathro
+ * @author: © jelathro
  * @date: 10/27/13
  * 
  * Example code use for this 
