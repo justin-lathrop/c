@@ -1,30 +1,38 @@
 #include <stdio.h>
 
-#define BUF_SIZE 1024
-
-/*
- * @author jelathro
- * @data 3/19/13
- * 
- * Show some of the various input output
- * (I/O) methods in C.
- */
-int main(void){
-    // Input Output using printf
-    // and scanf
-    int number_entered = 0;
-    printf("number_entered = %d\n", number_entered);
-    scanf("%d", &number_entered);
-    printf("number_entered = %d\n", number_entered);
-    
-    // Input Output using STDIN and
-    // STDOUT
-    char buffer[BUF_SIZE];
-    printf("Entering STDIN while loop\n");
-    while(fgets(buffer, BUF_SIZE, stdin)){
-        puts(buffer);
-    }
-    printf("You pressed control+d, so i'll leave now\n");
-
-    return 0;
+int main(){
+   
+    int num; 
+    char ch; 
+    float f; 
+  
+    // --- Integer --- 
+  
+    // Input the integer 
+    printf("Enter the integer: "); 
+    scanf("%d", &num); 
+  
+    // Output the integer 
+    printf("\nEntered integer is: %d", num); 
+  
+    // --- Float --- 
+  
+    // Input the float 
+    printf("\n\nEnter the float: "); 
+    scanf("%f", &f); 
+  
+    // Output the float 
+    printf("\nEntered float is: %f", f); 
+  
+    // --- Character --- 
+  
+    // Input the Character 
+    printf("\n\nEnter the Character: "); 
+    scanf("%c", &ch); 
+  
+    // Output the Character 
+    printf("\nEntered integer is: %c", ch); 
+  
+    return 0; 
+   
 }
