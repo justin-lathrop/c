@@ -35,7 +35,7 @@ int list_add_item(List_t * list, ListItem_t * li){
 	// No head yet
 	if(!list->head){
 		list->head = li;
-		return(1);
+		return 1;
 	}
 
 	// Move to the end of the list
@@ -45,13 +45,13 @@ int list_add_item(List_t * list, ListItem_t * li){
 
 	// Made it to the end of the list
 	// add the new item to the list.
-	if(!li->next){
+	if(!li->next)
 		nextItem->next = li;
-	}else{
-		return(0);
-	}
+	else
+		return 0;
+	
 
-	return(1);
+	return 1;
 }
 
 /*
