@@ -1,0 +1,28 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+void palindrome(char str[])
+{
+    int n, i, j;
+    n = strlen(str);
+    i = 0;
+    j = n - 1;
+
+
+    while (j > i)
+    {
+        if (str[i++] != str[j--])
+        {
+            printf("%s is Not Palindrome", str);
+            return;
+        }
+    }
+    printf("%s is palindrome", str);
+}
+int main()
+{
+    palindrome("abccba");
+
+    return 0;
+}
