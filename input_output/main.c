@@ -12,11 +12,19 @@
 int main(void){
     // Input Output using printf
     // and scanf
-    int number_entered = 0;
+    int number_entered = 0,choice;
+    
     printf("number_entered = %d\n", number_entered);
+    printf("Enter your choice 0/1");
+    scanf("%d",&choice);
+    if(choice==0)
+    { printf("switch to stdin input/ouput method");
+    }
+    else
+    {
     scanf("%d", &number_entered);
     printf("number_entered = %d\n", number_entered);
-    
+    }
     // Input Output using STDIN and
     // STDOUT
     char buffer[BUF_SIZE];
