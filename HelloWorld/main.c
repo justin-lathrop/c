@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <stdio.h> /* We use this header file because,
+                     declaration of printf() is in that header file */
 
 /*
  * @author jelathro
