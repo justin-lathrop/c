@@ -5,7 +5,7 @@
 
 #include <stdlib.h>
 
-#include "CircularBuffer.h"
+#include <CircularBuffer.h>
 
 CircularBuffer * circularbuffer_initialize(size_t size, void * val){
 	size_t i;
