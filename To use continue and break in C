@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n,i,a[20];
+clrscr();
+printf("\n ENTER THE VALUE OF N ");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+printf("\n ENTER %d NUMBER:  ");
+scanf("%d",&a[i]);
+	if(a>0)
+	{
+continue;
+	}
+	if(a>=100)
+	{	
+	break;
+}
+sum=sum+a[i]
+} 
+printf("\n SUM IS : %d ",sum);
+getch();
+} 
+
