@@ -8,5 +8,7 @@
  */
 int main(void){
     printf("Hello, World!\n");
+    /* Without using ; -> 
+    if(printf("Hello, World!\n")){} */
     return 0;
 }
