@@ -1,0 +1,6 @@
+//using c language 
+#include <stdio.h>
+void main(void){
+  while(!printf("Hello World!")){}
+}
+//This code will print "Hello World!" onto the output screen and no semicolon has been used in this program.
