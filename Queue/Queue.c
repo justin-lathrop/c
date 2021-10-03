@@ -1,125 +1,94 @@
-/*
- * @author: jelathro
- * @date: 10/27/13
- * 
- * Queue implementation file.
- */
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+struct node
+{
+	int data;
+	struct node *next;
+};
+struct node *front=NULL;
+struct node *rear=NULL;
 
-#include <stdio.h>
-#include <stdlib.h>
+void insert(int);
+void del_element();
+void display();
 
-#include "Queue.h"
-
-Queue_t queue_initialize(){
-	Queue_t q = { 0, 0 };
-	return(q);
-}
-
-int queue_push(Queue_t * q, void * d){
-	QueueItem_t * tmp;
-
-	if(q->size == 0){
-		q->head = (QueueItem_t *) malloc( sizeof(QueueItem_t) );
-                if (q->head == NULL) {
-                    printf("\nERROR: Insufficient memory. Terminating...");
-                    exit(EXIT_FAILURE);
-                }
-		q->head->next = 0;
-		q->head->data = d;
-	}else{
-		tmp = q->head;
-		q->head = (QueueItem_t *) malloc( sizeof(QueueItem_t) );
-                if (q->head == NULL) {
-                    printf("\nERROR: Insufficient memory. Terminating...");
-                    exit(EXIT_FAILURE);
-                }
-		q->head->data = d;
-		q->head->next = tmp;
-	}
-
-	q->size++;
-
-	return(1);
-}
-
-int queue_pop(Queue_t * q, queue_callback_func_pop cb){
-	// Temporary "iterator" on the list
-	QueueItem_t * nextItem = q->head;
-
-	if(q->size == 0) return(0);
-
-	if(q->size == 1){
-		if( cb(q->head->data) ){
-			free(q->head);
-			q->size--;
-			return(1);
-		}else{
-			return(0);
+int main()
+{
+	int n,option;
+	do
+	{
+		printf("\n\n*************QUEUE MENU************");
+		printf("\n\n1.ADD");
+		printf("\n2.REMOVE");
+		printf("\n3.DISPLAY");
+		printf("\n4.EXIT");
+		printf("\n\n enter your option:");
+		scanf("%d",&option);
+		switch(option)
+		  {
+			case 1:
+				printf("\n enter the number");
+				scanf("%d",&n);
+				insert(n);                                      //insert function call
+				break;
+			case 2:
+			del_element();                                      //del_element function call
+			break;
+			case 3:
+			display();                                          //display function call
+			break;
+			default:
+				{
+				printf("\nSorry u have entered a wrong choice . beter Luck next time\n");
+				exit(0);
+				}
+				
+		  }
 		}
+		while(option !=4);
 	}
-
-	// Move to one before end of list
-	while(nextItem->next){
-		if(!nextItem->next->next){
-			// Remove last list item
-			if( cb(nextItem->next->data) ){
-				free(nextItem->next);
-			}else{
-				return(0);
-			}
-
-			nextItem->next = 0;
-
-			q->size--;
-
-			return(1);
-		}else{
-			nextItem = nextItem->next;
-		}
+void insert(int item)
+{
+	struct node *ptr=malloc(sizeof(struct node));
+	ptr->data=item;
+	ptr->next=NULL;
+	if(rear==NULL)
+	{
+		front=ptr;
+		rear=ptr;
 	}
-
-	return(0);
+	else
+	{
+		rear->next=ptr;
+		rear=rear->next;
+	}
 }
-
-void * queue_front(Queue_t * q){
-	QueueItem_t * tmp = q->head;
-
-	if(q->size == 0) return( (void *)0);
-
-	while(tmp->next){
-		tmp = tmp->next;
+void del_element()
+{
+	if(front==NULL)
+	{
+		printf("\n\nQUEUE IS EMPTY ");
 	}
-
-	return( tmp->data );
+	else
+	{
+		struct node *temp;
+		temp=front;
+		front=front->next;
+		printf("\nDELETE=%d",temp->data);
+		free(temp);
+	}
 }
-
-void queue_for_each(Queue_t * q, queue_callback_func cb){
-	QueueItem_t * next = q->head;
-	int idx = 0;
-
-	if(q->size == 0) return;
-
-	while(next){
-		cb(idx, next->data);
-		idx++;
-		next = next->next;
+void display()
+{
+	struct node *temp;
+	temp=front;
+	printf("\n");
+	while(temp != NULL)
+	{
+		printf("%d\n",temp->data);
+		temp=temp->next;
 	}
 }
 
-int queue_remove(Queue_t * q, queue_callback_func_pop cb){
-	QueueItem_t * tmp;
-	QueueItem_t * next = q->head;
 
-	while(next){
-		tmp = next;
-		next = next->next;
-
-		if(cb(tmp->data)){
-			free(tmp);
-		}else{
-			return(0);
-		}
-	}
-
-	return(1);
-}
