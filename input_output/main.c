@@ -22,7 +22,7 @@ int main(void){
     char buffer[BUF_SIZE];
     printf("Entering STDIN while loop\n");
     while(fgets(buffer, BUF_SIZE, stdin)){
-        puts(buffer);
+        puts(buffer);   //puts has some kinda internal bugs so don't use it much
     }
     printf("You pressed control+d, so i'll leave now\n");
 

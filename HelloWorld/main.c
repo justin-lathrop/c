@@ -6,7 +6,8 @@
  * 
  * Print "Hello, World!" to the console
  */
-int main(void){
-    printf("Hello, World!\n");
+int main(void)
+{
+    printf("Hello, world!\n");
     return 0;
 }
